@@ -17,6 +17,11 @@
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "📱🔐 Personal mobile devices"
+labels:
+  - name: C-Suite
+    description: Hosts belonging to the C-Suite
+    label_membership_type: manual
+    hosts:
 controls:
   setup_experience:
     ###########################################################
@@ -44,6 +49,8 @@ controls:
   apple_settings:
     configuration_profiles:
       - path: ../platforms/ios/configuration-profiles/passcode-settings.json
+        labels_exculde_any:
+        - C-Suite
       # … e.g.
       # - path: ../lib/ios/declaration-profiles/Passcode settings.json
       # - path: ../lib/ios/configuration-profiles/self-service.mobileconfig
@@ -108,8 +115,3 @@ software:
     #   display_name: "Slack"
     #   self_service: true
     #   setup_experience: true
-labels:
-  - name: C-Suite
-    description: Hosts belonging to the C-Suite
-    label_membership_type: manual
-    hosts:
