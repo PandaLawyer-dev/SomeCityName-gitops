@@ -12,6 +12,10 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 org_settings:
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      activities_webhook_url: https://www.apple.com
   fleet_desktop:
     transparency_url: https://catoftheday.com
   host-expiry_settings:
@@ -30,9 +34,9 @@ org_settings:
     ###########################################################
     org_name: Fleet Test
   webhook_settings:
-        activities_webhook:
-          enable_activities_webhook: true
-          activities_webhook_url: https://www.apple.com
+    activities_webhook:
+      enable_activities_webhook: true
+      activities_webhook_url: https://www.apple.com
 
   server_settings:
     ###########################################################
