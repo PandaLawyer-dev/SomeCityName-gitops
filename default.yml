@@ -17,7 +17,7 @@ org_settings:
   host-expiry_settings:
     enabled: true
     host_expiry_window: 30
-    
+
 
   org_info:
     ###########################################################
@@ -28,7 +28,11 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: IKEA
+    org_name: Fleet Test
+      webhook_settings:
+        activities_webhook:
+          enable_activities_webhook: true
+          activities_webhook_url: https://www.apple.com
 
   server_settings:
     ###########################################################
